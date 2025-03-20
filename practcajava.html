@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #aad5d4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-box {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        .login-box h2 {
+            text-align: center;
+            color: #aebfd2;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h2>Iniciar sesión</h2>
+        <form id="loginForm">
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Correo electrónico o teléfono" required>
+            </div>
+            <div class="mb-3">
+                <input type="password" class="form-control" placeholder="Contraseña" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Iniciar sesión</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("tu contrasena es incorecta.");
+        });
+    </script>
+</body>
+</html>
